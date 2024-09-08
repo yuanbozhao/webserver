@@ -30,14 +30,17 @@ sh ./build.sh
 ```
 // 创建mysql用户
 create user 'webserver_zhao' @ '%' identified by '123456';
+
 // 创建数据库
 create database webserver;
+
 // 创建用户表
 use webserver;
 create table user(
 	username char(50) null,
 	password char(50) null
 	)engine=InnoDB;
+
 // 添加用户
 insert into user(username,password) values('yourname','yourpassword');
 ```
@@ -50,7 +53,8 @@ string user = "webserver_zhao";
 string passwd = "123456";
 string databasename = "webserver";
 int sqlNum = 8;     // sql 库
-// IO线程，word线程，sep_字段
+
+// IO线程，word线程
 int IO_threadnum = 30;
 int WORK_threadnum = 0;
 ```
