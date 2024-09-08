@@ -27,7 +27,7 @@ sh ./build.sh
 
 ## 数据库配置
 
-```mysql
+```
 // 创建mysql用户
 create user 'webserver_zhao' @ '%' identified by '123456';
 // 创建数据库
@@ -44,7 +44,7 @@ insert into user(username,password) values('yourname','yourpassword');
 
 ## main.cpp 配置
 
-```c++
+```
 // 需要修改的数据库信息,登录名,密码,库名
 string user = "webserver_zhao";
 string passwd = "123456";
